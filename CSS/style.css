@@ -81,6 +81,7 @@ p {
     margin-left: 10pt;
 }
 
+/* INICIO PÁGINAS  */
 .p1 {
     background-image: url(../IMG/iniciofondo1.png);
     height: 40vh;
@@ -92,6 +93,19 @@ p {
     align-content: center;
     z-index: 2;
 }
+.hist1 {
+    background-color: #bddcff;
+    height: 40vh;
+    width: 100vw;
+    margin-left: -15pt;
+    background-size: contain;
+    position: relative;
+    display: block;
+    align-content: center;
+    z-index: 2;
+}
+
+/* SEGUNDA PARTE PÁGINAS  */
 
 .p2 {
     background-image: url(../IMG/iniciofondo2.png);
@@ -105,19 +119,80 @@ p {
     align-content: center;
     z-index: 2;
 }
-
-.p4 {
-    background-color: #cff0ff;
-    height: 30vh;
-    width: 96vw;
-    margin-left: -21pt;
+.hist2 {
+    background-color: #9dc9ff;
+    height: 120vh;
+    width: 100vw;
+    margin-left: -15pt;
     margin-top: 0%;
     background-size: contain;
     position: relative;
     display: block;
     align-content: center;
     z-index: 2;
-    border: solid 10px #9dc9ff;
+}
+
+
+
+.rby {
+    background-color: #bddcff;
+    border-radius: 10pt;
+    background-blend-mode: screen;
+    position: relative;
+    margin: 15pt;
+    padding: 20pt;
+    padding-left: 10pt;
+    width: 80vw;
+    height: 40vh;
+}
+
+.rby img {
+    width: 65vw;
+    position: relative;
+    left: -30pt;
+    bottom: 5pt;
+
+}
+.sty {
+    background-color: #bddcff;
+    border-radius: 10pt;
+    background-blend-mode: screen;
+    position: relative;
+    margin: 15pt;
+    padding: 20pt;
+    padding-left: 10pt;
+    width: 80vw;
+    height: 40vh;
+}
+
+.sty img {
+    width: 65vw;
+    position: relative;
+    right: -100pt;
+    bottom: 5pt;
+
+}
+
+
+/* TEXTOS */
+
+.rby p {
+    z-index: 2;
+    width: 40%;
+    position: relative;
+    left: 120pt;
+    bottom: 250pt;
+    text-align: right;
+    color: #384059;
+}
+.sty p {
+    z-index: 2;
+    width: 40%;
+    position: relative;
+    right: 50pt;
+    bottom:250pt;
+    text-align: right;
+    color: #384059;
 }
 
 .inicio p {
@@ -129,11 +204,35 @@ p {
 .p1 h1 {
     margin-top: -75pt;
 }
+.hist1 h1 {
+    margin-top: 50pt;
+}
 
 .p2 h1 {
     margin-top: -175pt;
 
 }
+
+.post a {
+    color: #FA78B6;
+    margin: 0%;
+    text-align: center;
+    text-decoration: underline;
+}
+.post h1 {
+    margin: 0%;
+    font-size: 15pt;
+    text-align: center;
+    padding: 10pt;
+    padding-bottom: 5pt;
+}
+
+.btn-dudas a {
+    text-decoration: none;
+    color: #384059;
+    font-size: 15pt;
+}
+
 
 .post {
     margin-left: 15pt;
@@ -155,21 +254,6 @@ p {
     position: relative;
 }
 
-.post h1 {
-    margin: 0%;
-    font-size: 15pt;
-    text-align: center;
-    padding: 10pt;
-    padding-bottom: 5pt;
-}
-
-.post a {
-    color: #FA78B6;
-    margin: 0%;
-    text-align: center;
-    text-decoration: underline;
-}
-
 #nov2 {
     grid-column: 1/2;
     margin-left: 160pt;
@@ -186,6 +270,26 @@ p {
     margin-top: -50px;
 }
 
+/* FOOTER */
+
+.p4 {
+    background-color: #cff0ff;
+    height: 30vh;
+    width: 96vw;
+    margin-left: -21pt;
+    margin-top: 0%;
+    background-size: contain;
+    position: relative;
+    display: block;
+    align-content: center;
+    z-index: 2;
+    border: solid 10px #9dc9ff;
+}
+
+.dudas {
+    display: flex;
+}
+
 .btn-dudas {
     width: 30vw;
     text-align: center;
@@ -196,15 +300,6 @@ p {
     box-shadow: 10px 10px 0px 1px #9dc9ff;
 }
 
-.btn-dudas a {
-    text-decoration: none;
-    color: #384059;
-    font-size: 15pt;
-}
-
-.dudas {
-    display: flex;
-}
 
 footer {
     padding: 20pt;
@@ -214,7 +309,7 @@ footer {
     background-color: #FA78B6;
     width: 90vw;
     height: 100pt;
-    position: relative;
+    position: absolute;
     display: flex;
 
 }
@@ -234,6 +329,78 @@ footer img {
 .ftr a {
     text-decoration: underline;
     color: #384059;
+}
+
+.ftrh {
+    margin-right: 40pt;
+    width: 200pt;
+    height: 100pt;
+}
+
+.ftrh a {
+    text-decoration: underline;
+    color: #384059;
+}
+
+.p4h {
+    background-color: #cff0ff;
+    height: 30vh;
+    width: 96vw;
+    margin-left: -103vw;
+    margin-top: 120vh;
+    background-size: contain;
+    position: relative;
+    display: block;
+    align-content: center;
+    z-index: 3;
+    border: solid 10px #9dc9ff;
+}
+
+.dudash {
+    display: flex;
+}
+
+.btn-dudas {
+    width: 30vw;
+    text-align: center;
+    border: solid 3px #384059;
+    background-color: #E6FFFF;
+    padding: 20px;
+    margin-left: 15pt;
+    box-shadow: 10px 10px 0px 1px #9dc9ff;
+}
+
+
+footer {
+    padding: 20pt;
+    padding-top: 90pt;
+    margin-left: -360pt;
+    margin-top: 170pt;
+    background-color: #FA78B6;
+    width: 90vw;
+    height: 100pt;
+    position: relative;
+    display: flex;
+    
+
+}
+.hfoot {
+    padding: 20pt;
+    padding-top: 90pt;
+    margin-left: -370pt;
+    margin-top: 150vh;
+    background-color: #FA78B6;
+    width: 90vw;
+    height: 100pt;
+    position: relative;
+    display: flex;
+    
+}
+
+footer img {
+    position: absolute;
+    width: 40%;
+    margin-top: -60pt;
 }
 
 @media screen and (min-width: 768px) {
